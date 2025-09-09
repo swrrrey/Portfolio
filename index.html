@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <header>
+        <nav class="navbar">
+            <div class="logo">MyPortfolio</div>
+            <ul class="nav-links" id="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="menu-toggle" id="menu-toggle">&#9776;</div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Hello, I'm <span>Rajesh Swarna Lakshmi</span></h1>
+            <p>A passionate data enthusiast 🚀</p>
+            <a href="#projects" class="btn">View My Work</a>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <h2>About Me</h2>
+        <div class="about-content">
+            <p>I am a Data Science student with strong skills in Python, Excel, and SQL, and practical experience in Power BI for data cleaning, transformation, analysis, and visualization. I am currently working on a project titled Forensic Accounting AI: Detecting Financial Statement Manipulation, where the model detects manipulation in the financial statements . And I'm Passionate about turning data into actionable knowledge, I am now seeking internship opportunities to apply my skills, grow in the field, and contribute to impactful data-driven solutions.</p>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <h2>My Projects And Certifications</h2>
+        <div class="project-grid">
+            <div class="project-card">
+                <h3>Forensic Accounting AI : Detecting Financial Statement Manipulation</h3>
+                <ul>
+                    <li>This project develops an AI-based system to detect financial statement manipulation automatically. By analyzing financial data using machine learning and statistical techniques, the system identifies anomalies and patterns indicative of fraud. The goal is to improve the accuracy and speed of forensic accounting, helping auditors uncover financial fraud more effectively.
+
+Trained the AI models on labeled datasets containing both genuine and manipulated financial data.
+</li>
+                    <li>Built interactive dashboards in Power BI it helps to create  easy-to-understand visualizations of complex financial data and AI model results, making it easier to spot trends and anomalies.
+
+ </li>
+                    <li>Tools: Python, SQL, Power BI, Pandas, NumPy, Matplotlib</li>
+                </ul>
+            </div>
+            <div class="project-card">
+                <h3> Certifications Completed</h3>
+    <ul>                                                                                                                                                                                                <li>Completed a certification course on Data Analytics and Python through Coursera. The course covered key concepts of data analytics, including data cleaning, transformation, visualization, and statistical analysis using Python. Gained hands-on experience with libraries such as Pandas, NumPy, and Matplotlib to analyze datasets and derive actionable insights.</li>              </ul>
+            </div>
+            <div class="project-card">
+                <h3>AI And IoT Waste Management System</h3>
+                <ul>
+                    <li>Traditional waste management in India faces inefficiency, high costs, and environmental harm. AI and IoT provide a smart solution by enabling real-time waste monitoring, optimized collection routes, and improved recycling.
+ The proposed system integrates IoT sensors with AI analytics to track waste levels, predict collection needs, and analyze recycling patterns.</li>
+                    
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <h2>Contact Me</h2>
+        <form id="contact-form">
+            <input type="text" id="name" placeholder="Your Name" required>
+            <input type="email" id="email" placeholder="Your Email" required>
+            <textarea id="message" placeholder="Your Message" required></textarea>
+            <button type="submit">Send</button>
+        </form>
+        <p id="form-status"></p>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Rajesh Swarna Lakshmi | All rights reserved</p>
+    </footer>
+
+</body>
+</html>

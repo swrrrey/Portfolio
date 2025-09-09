@@ -1,0 +1,298 @@
+/* Reset and base styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #121212;
+  color: #e0e0e0;
+  scroll-behavior: smooth;
+  line-height: 1.6;
+}
+
+/* Navbar */
+header {
+  background: #1f1f1f;
+  padding: 15px 30px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.7);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #4fc3f7;
+  letter-spacing: 2px;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+}
+
+.nav-links li a {
+  color: #e0e0e0;
+  text-decoration: none;
+  font-weight: 600;
+  padding: 8px 12px;
+  border-radius: 8px;
+  transition: background-color 0.3s ease;
+}
+
+.nav-links li a:hover {
+  background-color: #4fc3f7;
+  color: #121212;
+}
+
+/* Menu toggle for mobile */
+.menu-toggle {
+  display: none;
+  font-size: 28px;
+  color: #4fc3f7;
+  cursor: pointer;
+}
+
+/* Hero Section */
+.hero {
+  background: linear-gradient(135deg, #0d47a1, #1976d2);
+  text-align: center;
+  padding: 120px 20px 80px;
+  color: #fff;
+}
+
+.hero h1 {
+  font-size: 3.5rem;
+  margin-bottom: 15px;
+}
+
+.hero h1 span {
+  color: #ffd700;
+}
+
+.hero p {
+  font-size: 1.4rem;
+  margin-bottom: 25px;
+  font-weight: 500;
+}
+
+.btn {
+  display: inline-block;
+  background-color: #ffd700;
+  color: #121212;
+  padding: 14px 30px;
+  font-size: 1.1rem;
+  border: none;
+  border-radius: 10px;
+  text-decoration: none;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #ffca28;
+  color: #000;
+}
+
+/* About Section */
+.about {
+  padding: 60px 20px;
+  background-color: #1a1a1a;
+  text-align: center;
+}
+
+.about h2 {
+  font-size: 2.8rem;
+  margin-bottom: 40px;
+  color: #4fc3f7;
+}
+
+.about-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
+  align-items: center;
+  max-width: 900px;
+  margin: 0 auto;
+  color: #ccc;
+}
+
+.about-content img {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 0 8px 20px rgba(79, 195, 247, 0.6);
+  transition: transform 0.3s ease;
+}
+
+.about-content img:hover {
+  transform: scale(1.05);
+}
+
+.about-content p {
+  max-width: 550px;
+  font-size: 1.15rem;
+  line-height: 1.5;
+}
+
+/* Projects Section */
+.projects {
+  background-color: #121212;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.projects h2 {
+  font-size: 2.8rem;
+  margin-bottom: 40px;
+  color: #4fc3f7;
+}
+
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 30px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.project-card {
+  background: linear-gradient(145deg, #212121, #1a1a1a);
+  padding: 20px;
+  border-radius: 20px;
+  box-shadow: 4px 4px 15px rgba(0,0,0,0.9);
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+  cursor: pointer;
+}
+
+.project-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 6px 6px 20px #4fc3f7;
+}
+
+/* Contact Section */
+.contact {
+  padding: 60px 20px;
+  background: #1f1f1f;
+  text-align: center;
+  color: #ddd;
+}
+
+.contact h2 {
+  font-size: 2.8rem;
+  margin-bottom: 30px;
+  color: #4fc3f7;
+}
+
+form {
+  max-width: 450px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  width: 100%;
+  padding: 15px;
+  margin-bottom: 20px;
+  background-color: #2a2a2a;
+  border: 1.8px solid #444;
+  border-radius: 12px;
+  color: #e0e0e0;
+  font-size: 1.1rem;
+  transition: border-color 0.3s ease;
+  resize: vertical;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+textarea:focus {
+  outline: none;
+  border-color: #4fc3f7;
+}
+
+button[type="submit"] {
+  width: 100%;
+  background-color: #4fc3f7;
+  border: none;
+  padding: 16px 0;
+  font-size: 1.3rem;
+  font-weight: 700;
+  border-radius: 12px;
+  color: #121212;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+  background-color: #357ab7;
+}
+
+#form-status {
+  margin-top: 16px;
+  font-weight: 600;
+  font-size: 1.1rem;
+}
+
+/* Footer */
+footer {
+  background-color: #1a1a1a;
+  color: #777;
+  font-size: 0.95rem;
+  padding: 20px 0;
+  text-align: center;
+}
+
+/* Responsive Navbar */
+@media (max-width: 768px) {
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    background-color: #1f1f1f;
+    position: absolute;
+    top: 65px;
+    right: 0;
+    padding: 15px 20px;
+    width: 220px;
+    border-radius: 8px 0 0 8px;
+    box-shadow: -4px 4px 20px rgba(0,0,0,0.7);
+  }
+
+  .nav-links.show {
+    display: flex;
+  }
+
+  .nav-links li {
+    margin: 15px 0;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+}
+
+/* Responsive layout for About section */
+@media (max-width: 600px) {
+  .about-content {
+    flex-direction: column;
+  }
+
+  .hero h1 {
+    font-size: 2.6rem;
+  }
+}
