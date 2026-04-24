@@ -60,7 +60,7 @@ Portfolio/
 
 🚀 Getting Started
 
-View live: [swrrrey-portfolio.vercel.app](portfolio-eta-kohl-44.vercel.app)
+View live:portfolio-eta-kohl-44.vercel.app
 
 
 🔮 Future Scope
